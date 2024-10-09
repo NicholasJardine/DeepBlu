@@ -30,7 +30,7 @@ export const Hero = () => {
         <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">One stop shop</h1>
         <p className="text-xl text-[#010D3E] tracking-tight mt-6">At BluWave, we offer a comprehensive range of tech services tailored to your needs. Whether it's cloud-based mobile and web applications or advanced data science solutions, we provide everything you need to innovate and grow your business—all in one place.</p>
         <div className="flex gap-1 items-center mt-[30px]">
-          <button className="btn btn-primary">Get for free</button>
+          <button className="btn btn-primary">Pricing</button>
           <button className="btn btn-text gap-1"><span>Learn More</span> <ArrowIcon className='h-5 w-5'/></button>
         </div>
         </div>

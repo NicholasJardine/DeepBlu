@@ -7,12 +7,14 @@ import { Testimonials } from "@/sections/Testimonials";
 import { CallToAction } from "@/sections/CallToAction";
 import { Footer } from "@/sections/Footer";
 import LottieAnimations from "@/components/wavesfull";
+import { WhyUs } from "@/sections/WhyUs";
 export default function Home() {
   return( 
   <> 
         <Header/>
         <LottieAnimations/>
         <Hero/>
+        <WhyUs/>
         <LogoTicker/>
         <ProductShowcase/>
         <Pricing/>

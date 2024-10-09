@@ -2,6 +2,7 @@
 import ArrowIcon from '@/assets/arrow-right.svg'
 
 import Lottie from "lottie-react";
+import LottieAnimation from './waves';
 // import animationData from '@/assets/waves.json'
 import animationData from '@/assets/waves.json'
 
@@ -16,6 +17,7 @@ const LottieAnimations = () => {
           <button className="btn btn-text gap-1"><span>Learn More</span> <ArrowIcon className='h-5 w-5'/></button>
         </div>
         </div>
+        {/* <LottieAnimation/> */}
       <Lottie 
         animationData={animationData} 
         loop 

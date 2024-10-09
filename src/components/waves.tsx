@@ -1,10 +1,10 @@
 // components/LottieAnimation.js
 import Lottie from "lottie-react";
-import animationData from '@/assets/waves.json'
+import animationData from '@/assets/coder2.json'
 
 const LottieAnimation = () => {
   return (
-    <div style={{ width: 400, height: 400 }}>
+    <div style={{ width: 500, height: 650 }}>
       <Lottie animationData={animationData} loop={true} />
     </div>
   );
