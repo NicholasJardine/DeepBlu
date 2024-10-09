@@ -29,7 +29,7 @@ export const WhyUs = () => {
               <li className="flex items-start gap-3">
                 <Image src="/cost-effective.svg" alt="Cost Icon" width={40} height={40} />
                 <div>
-                  <strong>Cost Effective:</strong> Our lean team structure ensures overhead costs are kept to a minimum. You get high-quality development without the bloated expenses that come with big corporate firms.
+                  <strong>Cost:</strong> Our lean team structure ensures overhead costs are kept to a minimum. You get high-quality development without the bloated expenses that come with big corporate firms.
                 </div>
               </li>
               {/* <li className="flex items-start gap-3">
@@ -45,7 +45,7 @@ export const WhyUs = () => {
                 </div>
               </li> */}
               <li className="flex items-start gap-3">
-                <Image src="/transparency.svg" alt="Transparency Icon" width={24} height={24} />
+                <Image src="/transparency.svg" alt="Transparency Icon" width={40} height={40} />
                 <div>
                   <strong>Transparency:</strong> We believe in clear communication and straightforward pricing. No hidden fees, no surprises—just honest collaboration, so you know exactly what you’re getting and when.
                 </div>
@@ -56,12 +56,12 @@ export const WhyUs = () => {
                   <strong>Innovation:</strong> We don’t just build software; we create solutions. Our team thrives on challenging the status quo, using the latest technology to turn your ideas into cutting-edge systems.
                 </div>
               </li>
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <Image src="/flexible.svg" alt="Flexibility Icon" width={40} height={40} />
                 <div>
                   <strong>Flexibility:</strong> Unlike larger firms, we adapt to your needs and pivot when necessary. Whether it’s scaling up your app or making last-minute changes, we’re here to make sure your project stays on track and meets your goals.
                 </div>
-              </li>
+              </li> */}
             </ul>
             {/* <div className="flex gap-4 items-center mt-10">
               <button className="btn btn-primary">Pricing</button>

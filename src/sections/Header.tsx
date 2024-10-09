@@ -1,6 +1,8 @@
 import ArrowRight from "@/assets/arrow-right.svg"
 import Logo from '@/assets/BlueWaveLogo.png'
 import MenuIcon from '@/assets/menu.svg'
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 import Image from "next/image";
 export const Header = () => {
@@ -19,8 +21,9 @@ export const Header = () => {
     <div className="flex items-center justify-between">
     <Image src={Logo} alt = 'logo' height={116} width={116}/>
     <nav hidden className="md:flex gap-6 text-black/60 items-center">
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
+    <Link href="/"> <a>Home</a></Link>
+      <Link href="/about">About Us</Link>
+      
       <a href="#">Services</a>
       <a href="#">Contact</a>
       <a href="#">Portfolio</a>

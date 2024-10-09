@@ -4,7 +4,7 @@ import animationData from '@/assets/coder2.json'
 
 const LottieAnimation = () => {
   return (
-    <div style={{ width: 500, height: 650 }}>
+    <div style={{ width: 500, height: 500 }}>
       <Lottie animationData={animationData} loop={true} />
     </div>
   );
