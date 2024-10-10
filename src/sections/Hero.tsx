@@ -24,15 +24,19 @@ export const Hero = () => {
 
     <section ref={heroRef} className='mt-4 pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_86%)] overflow-x-clip'>
       <div className="container">
-        <div className='md:flex items-center'>
-        <div className='md:w-[478px] md:mr-16'> 
-        {/* <div className="tag">Version 2.0 is here</div> */}
+        <div className='md:flex flex-col items-center'>
         <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">One stop shop</h1>
-        <p className="text-xl text-[#010D3E] tracking-tight mt-6">At BluWave, we offer a comprehensive range of tech services tailored to your needs. Whether it's cloud-based mobile and web applications or advanced data science solutions, we provide everything you need to innovate and grow your business—all in one place.</p>
-        <div className="flex gap-1 items-center mt-[30px]">
+        <div className='md:w-[65%] md:mr-16 text-center'> 
+        {/* <div className="tag">Version 2.0 is here</div> */}
+        {/* <p className="text-xl text-[#010D3E] tracking-tight mt-6">At BluWave, we offer a comprehensive range of tech services tailored to your needs. Whether it's cloud-based mobile and web applications or advanced data science solutions, we provide everything you need to innovate and grow your business—all in one place.</p> */}
+          <p className="text-lg text-[#010D3E] tracking-tight mt-6">
+          At BluWave, we provide a full range of tech services tailored to your needs, including cloud-based mobile and web applications, as well as data analytics solutions. We offer everything you need to innovate and grow your business, all in one place.</p>
+        
+        <p className='tag mt-4'> OUR SERVICES</p>
+        {/* <div className="flex gap-1 items-center mt-[30px]">
           <button className="btn btn-primary">Pricing</button>
           <button className="btn btn-text gap-1"><span>Learn More</span> <ArrowIcon className='h-5 w-5'/></button>
-        </div>
+        </div> */}
         </div>
         <div className='mt-20 md:mt-0 md:h-[648px] md:flex-1 relative'>
         <ServicesGrid/>

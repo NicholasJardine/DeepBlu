@@ -21,7 +21,7 @@ export const Header = () => {
     <div className="flex items-center justify-between">
     <Image src={Logo} alt = 'logo' height={116} width={116}/>
     <nav hidden className="md:flex gap-6 text-black/60 items-center">
-    <Link href="/"> <a>Home</a></Link>
+    <Link href="/">Home</Link>
       <Link href="/about">About Us</Link>
       
       <a href="#">Services</a>

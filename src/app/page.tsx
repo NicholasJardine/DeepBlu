@@ -15,11 +15,11 @@ export default function Home() {
         <LottieAnimations/>
         <Hero/>
         <WhyUs/>
-        <LogoTicker/>
+        {/* <LogoTicker/>
         <ProductShowcase/>
         <Pricing/>
         <Testimonials/>
-        <CallToAction/>
+        <CallToAction/> */}
         <Footer/>
   </> );
 }
