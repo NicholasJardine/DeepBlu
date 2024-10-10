@@ -22,10 +22,10 @@ export const Header = () => {
     <Image src={Logo} alt = 'logo' height={116} width={116}/>
     <nav hidden className="md:flex gap-6 text-black/60 items-center">
     <Link href="/">Home</Link>
-      <Link href="/about">About Us</Link>
+    <Link href="/about">About Us</Link>
       
       <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <Link href="/contact">Contact </Link>
       <a href="#">Portfolio</a>
       <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">View Pricing</button>
 

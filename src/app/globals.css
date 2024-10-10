@@ -39,4 +39,31 @@
     .card{
         @apply p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full
     }
+
+    .grid-tile {
+        perspective: 1000px; /* Gives depth for the tilt */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+      
+      .grid-tile:hover {
+        transform: scale(1.05) rotateX(5deg) rotateY(5deg); /* Slight zoom and tilt */
+        box-shadow: 0 4px 20px rgba(0, 123, 255, 0.4); /* Glowing effect */
+      }
+      
+      /* Optional: add a smooth zoom for the content within the tile */
+      .grid-tile-content {
+        transition: transform 0.3s ease;
+      }
+      
+      .grid-tile:hover .grid-tile-content {
+        transform: scale(1.02);
+      }
+      
+
+      .transition {
+        transition: transform 0.3s ease;
+      }
+      
 }
