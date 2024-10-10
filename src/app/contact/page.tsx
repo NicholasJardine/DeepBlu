@@ -42,26 +42,29 @@ export default function Contact() {
   return (
     <> 
       <Header />
-      <div className="container mx-auto px-6 mt-0">
-        <section className='py-10 flex flex-col items-center mb-6 bg-[#f5f5ff] rounded-lg shadow-md'>
+        <section className='py-10 flex flex-col items-center bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_86%)] overflow-x-clip shadow-md'>
           <h1 className='section-title text-7xl mb-4'>Get in Touch</h1>
           <div className="bg-white max-w-[75%] rounded-lg shadow-lg overflow-hidden">
             <div className="mx-auto max-w-[90%] flex flex-col md:flex-row items-stretch justify-between gap-10 p-8">
               <div className="basis-[48%] text-[#676767]">
                 <h3 className="font-medium text-[#000F38] text-[25px] flex items-center mb-5">
-                  Reach us here <Image src={'/message.svg'} width={35} height={35} className="ml-2" alt="Message Icon" />
+                  Reach us here <Image src={'/envelope.svg'} width={35} height={35} className="ml-2" alt="Message Icon" />
                 </h3>
                 <p className="max-w-[450px] leading-[1.6] mb-6">
                   You're welcome to contact us using the details below. We're here to assist with any inquiries or support you may need. Feel free to reach out, and we'll respond as soon as possible!
                 </p>
                 <ul>
                   <li className="flex items-center my-5">
-                    <Image src={'/paper-plane.svg'} width={25} height={25} className="mr-2" alt="Mail Icon" />
-                    <span className="ml-2 text-sm font-medium">support@rsatech.com</span>
+                    <Image src={'/paper-plane.svg'} width={32} height={32} className="mr-2" alt="Mail Icon" />
+                    <span className="ml-2 text-md font-medium">support@rsatech.com</span>
                   </li>
                   <li className="flex items-center my-5">
-                    <Image src={'/phone.svg'} width={25} height={25} className="mr-2" alt="Phone Icon" />
-                    <span className="ml-2 text-sm font-medium">+2766443839</span>
+                    <Image src={'/phone.svg'} width={32} height={32} className="mr-2" alt="Phone Icon" />
+                    <span className="ml-2 text-md font-medium">+2766443839</span>
+                  </li>
+                  <li className="flex items-center my-5">
+                    <Image src={'/whatsapp.svg'} width={32} height={32} className="mr-2" alt="Whatsapp Icon" />
+                    <span className="ml-2 text-md font-medium">+2724436829</span>
                   </li>
                 </ul>
               </div>
@@ -114,7 +117,7 @@ export default function Contact() {
             </div>
           </div>
         </section>
-      </div>
+      
       <Footer />
     </>
   );
