@@ -42,7 +42,7 @@ const lottieStyle: React.CSSProperties = {
   width: "100vw", // Explicitly set to viewport width
   height: "100vh", // Explicitly set to viewport height
   position: "absolute",
-  transform: "scale(1.5)",
+  transform: "scale(1.75)",
   transformOrigin: "center", 
   objectFit: "cover", // Ensure the animation scales to cover the entire area
   overflow: "hidden",

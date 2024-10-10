@@ -8,11 +8,14 @@ import { CallToAction } from "@/sections/CallToAction";
 import { Footer } from "@/sections/Footer";
 import LottieAnimations from "@/components/wavesfull";
 import { WhyUs } from "@/sections/WhyUs";
+import InvertedWaves from "@/components/wavesinverted";
 export default function Home() {
   return( 
   <> 
         <Header/>
         <LottieAnimations/>
+        {/* <InvertedWaves/> */}
+
         <Hero/>
         <WhyUs/>
         {/* <LogoTicker/>
