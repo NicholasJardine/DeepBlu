@@ -9,6 +9,7 @@ import {twMerge} from 'tailwind-merge'
 import {motion} from 'framer-motion'
 
 import Image from 'next/image';
+import { WebDev } from "@/sections/WebDev";
 
 const pricingTiers = [
   {
@@ -69,7 +70,16 @@ export default function Pricing() {
       </span>
       </p>
       </div>
+      <div className="flex items-center justify-center">
+      <h3 className="section-description lg:mt-16 tag-2">Mobile Apps</h3>
+      {/* <h3 className="section-description lg:mt-16">Websites/ Web apps</h3>
+      <h3 className="section-description lg:mt-16">Cloud migration</h3>
+      <h3 className="section-description lg:mt-16">Mobile Apps</h3> */}
+
+      
+      </div>
       <div className='flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center'>
+        
       {pricingTiers.map(({title, monthlyPrice, buttonText, popular,inverse, features})=>(
               <div className={twMerge('card', inverse === true && 'border-[#4480DB] bg-[#4480DB] text-white')}>
               <div className='flex justify-between'>
@@ -107,6 +117,7 @@ export default function Pricing() {
     </div>
 
   </section>
+  <WebDev/>
 
       <Footer />
     </>
