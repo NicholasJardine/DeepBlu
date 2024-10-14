@@ -31,68 +31,170 @@ export const WebDev = () => {
         {/* <p className="text-xl text-[#010D3E] tracking-tight mt-6">At BluWave, we offer a comprehensive range of tech services tailored to your needs. Whether it's cloud-based mobile and web applications or advanced data science solutions, we provide everything you need to innovate and grow your business—all in one place.</p> */}
           <p className="text-lg text-[#010D3E] tracking-tight mt-6">
           At BluWave, we provide a full range of tech services tailored to your needs, including cloud-based mobile and web applications, as well as data analytics solutions. We offer everything you need to innovate and grow your business, all in one place.</p>
-        
-          <h3 className="section-description lg:mt-16 tag-2">Websites</h3>
+            
+          <h3 className="section-description lg:mt-16 tag-2 mb-16">Websites</h3>
 
 
         </div>
         <div className='mt-20 md:mt-0 md:h-[648px] md:flex-1 relative'>
         {/* <ServicesGrid/> */}
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-transparent">
   <div className="container mx-auto px-6 lg:px-16">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       {/* First Column: Packages and Features */}
       <div>
-        <h2 className="text-3xl font-bold mb-6">Our Packages</h2>
+        <h1 className="text-3xl font-bold mb-6">Our Packages</h1>
         <div className="space-y-8">
-          {/* Package 1 */}
-          <div>
-            <h3 className="text-xl font-semibold">Basic Package</h3>
-            <p className="mt-2 text-gray-600">This package includes essential features to get started.</p>
-            <ul className="mt-4 list-disc list-inside space-y-2">
-              <li>Feature 1</li>
-              <li>Feature 2</li>
-              <li>Feature 3</li>
-            </ul>
-          </div>
+  {/* Package 1: Basic Package */}
+  <div className="bg-black text-white p-6 rounded-lg shadow-lg">
+    <h3 className="text-xl font-semibold">Basic Package</h3>
+    <h4>R 2500</h4>
+    <p className="mt-2 text-gray-300">
+      This package includes essential features to get started.
+    </p>
+    <ul className="mt-4 list-disc list-inside space-y-2">
+      <li>Max 3 pages</li>
+      <li>Static Content</li>
+      <li>Contact page with email integration</li>
+    </ul>
+  </div>
 
-          {/* Package 2 */}
-          <div>
-            <h3 className="text-xl font-semibold">Premium Package</h3>
-            <p className="mt-2 text-gray-600">Includes advanced features for growing businesses.</p>
-            <ul className="mt-4 list-disc list-inside space-y-2">
-              <li>Feature 1</li>
-              <li>Feature 2</li>
-              <li>Feature 3</li>
-              <li>Feature 4</li>
-            </ul>
-          </div>
+  {/* Package 2: Extended Package */}
+  <div className="bg-black text-white p-6 rounded-lg shadow-lg">
+    <h3 className="text-xl font-semibold">Extended Package</h3>
+    <p className="mt-2 text-gray-300">
+      Includes advanced features for growing businesses.
+    </p>
+    <ul className="mt-4 list-disc list-inside space-y-2">
+      <h2 className="text-lg font-bold text-white">Starts at R5000</h2>
+      <li>User management</li>
+      <li>5 pages max</li>
+      <li>Feature 3</li>
+      <li>Feature 4</li>
+    </ul>
+  </div>
 
-          {/* Package 3 */}
-          <div>
-            <h3 className="text-xl font-semibold">Enterprise Package</h3>
-            <p className="mt-2 text-gray-600">Our complete package with all features unlocked.</p>
-            <ul className="mt-4 list-disc list-inside space-y-2">
-              <li>Feature 1</li>
-              <li>Feature 2</li>
-              <li>Feature 3</li>
-              <li>Feature 4</li>
-              <li>Feature 5</li>
-            </ul>
-          </div>
-        </div>
+  {/* Package 3: Custom Package */}
+  <div className="bg-black text-white p-6 rounded-lg shadow-lg">
+    <h3 className="text-xl font-semibold">Custom Package</h3>
+    <p className="mt-2 text-gray-300">
+      Our complete package with all features unlocked.
+    </p>
+    <ul className="mt-4 list-disc list-inside space-y-2">
+      <h2 className="text-lg font-bold text-white">Starts at R8000</h2>
+      <li>5+ pages</li>
+      <li>User management</li>
+      <li>Cloud-based file systems and storage</li>
+      <li>API integration and database</li>
+      <li>Feature 5</li>
+    </ul>
+  </div>
+</div>
+
       </div>
 
       {/* Second Column: Image */}
-      <div className="flex justify-center">
-        <Image 
-          src="/whatsapp.svg" 
-          alt="Packages Image" 
-          width={400} 
-          height={400} 
-          className="rounded-lg shadow-lg"
-        />
-      </div>
+      <div className="relative flex justify-center ">
+  {/* SVG Image */}
+  <Image
+    src="/computer-2.svg"
+    alt="Computer Screen"
+    width={400}
+    height={400}
+    className="rounded-lg"
+  />
+
+  {/* Superimposed Package Content */}
+  <div
+    className="absolute inset-0 flex items-center justify-center"
+    style={{
+      padding: '10%',   // Adds padding to fit the content neatly inside the SVG screen
+      overflow: 'hidden',  // Ensures no content spills out
+      clipPath: 'inset(10% 10% 20% 10%)',  // Constrains the content to the SVG screen
+    }}
+  >
+    <div className="bg-transparent p-4 rounded-md shadow-lg w-full h-full overflow-auto">
+    <h3 className="text-xl font-semibold">Custom Package</h3>
+            {/* <p className="mt-2 text-gray-600">Our complete package with all features unlocked.</p> */}
+            <ul className="mt-2 list-disc list-inside text-sm space-y-1">
+            <h2>starts at R8000</h2> 
+
+              <li>5+ pages</li>
+              <li>User management</li>
+              <li>Cloud based file systems and storage</li>
+              <li>API integration and databse</li>
+            </ul>
+    </div>
+  </div>
+</div>
+
+
+<div className="relative flex justify-center ">
+  {/* SVG Image */}
+  <Image
+    src="/computer-3.svg"
+    alt="Computer Screen"
+    width={400}
+    height={400}
+    className="rounded-lg"
+  />
+
+  {/* Superimposed Package Content */}
+  <div
+    className="absolute inset-0 flex items-center justify-center"
+    style={{
+      padding: '10%',   // Adds padding to fit the content neatly inside the SVG screen
+      overflow: 'hidden',  // Ensures no content spills out
+      clipPath: 'inset(10% 10% 20% 10%)',  // Constrains the content to the SVG screen
+    }}
+  >
+    <div className="bg-transparent p-4 rounded-md shadow-lg w-full h-full overflow-auto">
+      <h3 className="text-lg font-bold text-center truncate">Extended Package</h3>
+      <p className="mt-2 text-gray-600 text-sm text-center">
+        Starts at R5000
+      </p>
+      <ul className="mt-2 list-disc list-inside text-sm space-y-1">
+        <li>User management</li>
+        <li>5 pages max</li>
+        <li>Feature 3</li>
+        <li>Feature 4</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div className="relative flex justify-center ">
+  {/* SVG Image */}
+  <Image
+    src="/computer.svg"
+    alt="Computer Screen"
+    width={400}
+    height={400}
+    className="rounded-lg"
+  />
+
+  {/* Superimposed Package Content */}
+  <div
+    className="absolute inset-0 flex items-center justify-center"
+    style={{
+      padding: '10%',   // Adds padding to fit the content neatly inside the SVG screen
+      overflow: 'hidden',  // Ensures no content spills out
+      clipPath: 'inset(10% 10% 20% 10%)',  // Constrains the content to the SVG screen
+    }}
+  >
+    <div className="bg-transparent p-4 rounded-md shadow-lg w-full h-full overflow-auto">
+    <h3 className="text-xl font-semibold">Basic Package</h3>
+            <h4>R 2500</h4>
+            {/* <p className="mt-2 text-gray-600">This package includes essential features to get started.</p> */}
+            <ul className="mt-2 list-disc list-inside text-sm space-y-1">              <li>Max 3 pages</li>
+              <li>Static Content</li>
+              <li>Contact page with email integration</li>
+            </ul>
+
+    </div>
+  </div>
+</div>
+
     </div>
   </div>
 </section>
