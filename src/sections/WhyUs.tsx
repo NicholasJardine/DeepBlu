@@ -19,7 +19,7 @@ export const WhyUs = () => {
       ref={heroRef}
       className=" bg-white overflow-x-clip"
     >
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 py-16">
         <div className="md:flex items-center gap-10">
           <div className="md:w-1/2">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#183EC2] mt-6">

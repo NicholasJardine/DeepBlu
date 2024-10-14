@@ -44,7 +44,7 @@ export default function Contact() {
       <Header />
         <section className='py-10 flex flex-col items-center bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_86%)] overflow-x-clip shadow-md'>
           <h1 className='section-title text-7xl mb-4'>Get in Touch</h1>
-          <div className="bg-white max-w-[75%] rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-white max-w-[75%] rounded-lg shadow-lg overflow-hidden mb-16">
             <div className="mx-auto max-w-[90%] flex flex-col md:flex-row items-stretch justify-between gap-10 p-8">
               <div className="basis-[48%] text-[#676767]">
                 <h3 className="font-medium text-[#000F38] text-[25px] flex items-center mb-5">

@@ -40,14 +40,21 @@
 //   </header> );
 // };
 
+"use client"
 import ArrowRight from "@/assets/arrow-right.svg";
 import Logo from '@/assets/BlueWaveLogo.png';
 import MenuIcon from '@/assets/menu.svg';
 import Link from 'next/link';
 import Image from "next/image";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 export const Header = () => {
+  const router = useRouter();
+  const handlePriceingClick = () => {
+    router.push('/pricing')
+
+  }
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
       <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
@@ -67,7 +74,7 @@ export const Header = () => {
               <a href="#" className="hover:text-black hover:border-b-4 hover:border-blue-500 transition-all">Services</a>
               <Link href="/contact" className="hover:text-black hover:border-b-4 hover:border-blue-500 transition-all">Contact</Link>
               <a href="#" className="hover:text-black hover:border-b-4 hover:border-blue-500 transition-all">Portfolio</a>
-              <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">View Pricing</button>
+              <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight" onClick={handlePriceingClick}>View Pricing</button>
             </nav>
             <MenuIcon className="h-5 w-5 md:hidden"/>
           </div>
