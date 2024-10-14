@@ -13,31 +13,28 @@ import Image from 'next/image';
 const pricingTiers = [
   {
     title: "Basic",
-    monthlyPrice: 12500,
+    monthlyPrice: 12000,
     buttonText: "View prices on credit",
     popular: false,
     inverse: false,
     features: [
-      "Basic cross platform APP (Android and iOS)",
+      "Basic cross platform App (Android and iOS)",
       "Static content (content remains unchanged)",
-      "Basic login functionality",
-      "Basic support",
+      "Basic support (4hrs free) and QA services",
     ],
   },
   {
-    title: "Middle",
+    title: "Middle range",
     monthlyPrice: 30000,
     buttonText: "View prices on credit",
     popular: true,
     inverse: true,
     features: [
-      "Up to 50 project members",
-      "Unlimited tasks and projects",
-      "50GB storage",
-      "Integrations",
-      "Priority support",
-      "Advanced support",
-      "Export support",
+      "Standard cross platform App (Android and iOS)",
+      "User integration (login and sign up functionality)",
+      "Dynamic content - API and database integration",
+      "Native functionality - GPS, maps, camera photo library etc.",
+      "Advanced support - (8hrs free) and QA services",
     ],
   },
   {
@@ -47,16 +44,12 @@ const pricingTiers = [
     popular: false,
     inverse: false,
     features: [
-      "Up to 5 project members",
-      "Unlimited tasks and projects",
-      "200GB storage",
-      "Integrations",
-      "Dedicated account manager",
-      "Custom fields",
-      "Advanced analytics",
-      "Export capabilities",
-      "API access",
-      "Advanced security features",
+        "Standard cross platform App (Android and iOS)",
+        "Data management platform (responsive website)",
+        "User integration (login and sign up functionality)",
+        "Dynamic content - API and database integration",
+        "Native functionality - GPS, maps, camera photo library etc.",
+        "Advanced support - (12hrs free) and QA services",
     ],
   },
 ];
@@ -78,7 +71,7 @@ export default function Pricing() {
       </div>
       <div className='flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center'>
       {pricingTiers.map(({title, monthlyPrice, buttonText, popular,inverse, features})=>(
-              <div className={twMerge('card', inverse === true && 'border-black bg-black text-white')}>
+              <div className={twMerge('card', inverse === true && 'border-[#4480DB] bg-[#4480DB] text-white')}>
               <div className='flex justify-between'>
               <h3 className={twMerge('text-lg font-bold text-black/50', inverse === true && 'text-white/60')}>{title}</h3>
               {popular ===true && (
