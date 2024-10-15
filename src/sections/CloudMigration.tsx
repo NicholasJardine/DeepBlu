@@ -5,8 +5,10 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import LottieCloud from '@/components/cloud';
 
+
 export const CloudMigration = () => {
   const heroRef = useRef(null);
+
   const { scrollYProgress } = useScroll({
     target: heroRef,
     offset: ["start end", "end start"],

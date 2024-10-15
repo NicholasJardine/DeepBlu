@@ -1,9 +1,9 @@
 // components/LottieAnimation.js
 import Lottie, { LottieRefCurrentProps } from "lottie-react"; // Import LottieRefCurrentProps for correct typing
 import { useRef, useEffect } from "react";
-import animationData from '@/assets/cloud-migration.json';
+import animationData from '@/assets/Design.json';
 
-const LottieCloud = () => {
+const DesignLottie = () => {
   // Use the correct type for the ref
   const lottieRef = useRef<LottieRefCurrentProps | null>(null);
 
@@ -14,7 +14,7 @@ const LottieCloud = () => {
   }, []);
 
   return (
-    <div style={{ width: 600, height: 600 }}>
+    <div style={{ width: 350, height: 350 }}>
       <Lottie 
         animationData={animationData} 
         loop={true} 
@@ -24,4 +24,4 @@ const LottieCloud = () => {
   );
 };
 
-export default LottieCloud;
+export default DesignLottie;
