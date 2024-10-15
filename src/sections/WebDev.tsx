@@ -367,7 +367,10 @@ export const WebDev = () => {
                 </div>
               </div>
             </div>
+
           </div>
+          <p className="text-white">Instead of charging a hosting fee as others might, we offer you the opportunity to pay for your hosting and associated cloud costs directly as this works out cheaper for you! Please note, to integrate a payment portal into your application for an e-commerce purposes is an additional R2500</p>
+
         </div>
       </div>
     </section>

@@ -10,6 +10,7 @@ import {motion} from 'framer-motion'
 
 import Image from 'next/image';
 import { WebDev } from "@/sections/WebDev";
+import { CloudMigration } from "@/sections/CloudMigration";
 
 const pricingTiers = [
   {
@@ -118,7 +119,7 @@ export default function Pricing() {
 
   </section>
   <WebDev/>
-
+    <CloudMigration/>
       <Footer />
     </>
   );
