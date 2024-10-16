@@ -14,7 +14,7 @@ const LottieCloud = () => {
   }, []);
 
   return (
-    <div style={{ width: 600, height: 600 }}>
+    <div style={{ width: 400, height: 400 }}>
       <Lottie 
         animationData={animationData} 
         loop={true} 

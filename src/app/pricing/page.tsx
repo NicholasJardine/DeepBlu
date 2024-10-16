@@ -121,7 +121,7 @@ export default function Pricing() {
   </section>
   <WebDev/>
     <CloudMigration/>
-    <DesignAndQA/>
+    {/* <DesignAndQA/> */}
       <Footer />
     </>
   );

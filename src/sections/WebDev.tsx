@@ -228,27 +228,30 @@ export const WebDev = () => {
       className="mt-4 pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_86%)] overflow-x-clip"
     >
       <div className="container mx-auto px-6 lg:px-16">
-        
+        {/* Section Title */}
+        <h2 className="section-title text-4xl font-extrabold text-center mb-10 lg:mb-20 lg:mt-12">
+          Our Web Development Packages
+        </h2>
+
         <div className="space-y-16">
-            
           {/* Row 1: Basic Package */}
           <div className="flex flex-col md:flex-row md: justify-around items-center">
-            <div className="bg-black text-white p-6 rounded-lg shadow-lg w-full md:w-1/2">
-              <h3 className="text-xl font-semibold">Basic Package</h3>
-              <h4>R 2500</h4>
+            <div className="bg-black text-white p-8 rounded-lg shadow-lg w-full md:w-1/2 transition-transform duration-300 transform hover:scale-105">
+              <h3 className="text-2xl font-bold mb-2">Basic Package</h3>
+              <h4 className="text-xl text-[#4480db]">R 2500</h4>
               <p className="mt-2 text-gray-300">
-                This package includes essential features to get started.
+                This package includes essential features to get your website up and running.
               </p>
               <ul className="mt-4 list-disc list-inside space-y-2">
-              <li>Max 3 pages</li>
-              <li>Static Content</li>
-              <li>Max 3 pages</li>
-              <li>Static Content</li>
-                <li>Contact page with email integration</li>
+                <li>Up to 3 static pages</li>
+                <li>Basic design customization</li>
+                <li>Mobile responsive layout</li>
+                <li>Contact form with email integration</li>
+                <li>Basic SEO setup</li>
               </ul>
             </div>
 
-            <div className="relative flex justify-center">
+            <div className="relative flex justify-center mt-8 md:mt-0">
               <Image
                 src="/computer.svg"
                 alt="Computer Screen"
@@ -265,7 +268,8 @@ export const WebDev = () => {
                 }}
               >
                 <div className="bg-transparent p-4 rounded-md shadow-lg w-full h-full overflow-auto">
-                  <h3 className="text-xl font-semibold">Basic Package</h3>
+                  <h3 className="text-xl font-semibold text-[#4480db]">Basic Package</h3>
+                  {/* Retained Original Text */}
                   <ul className="mt-2 list-disc list-inside text-sm space-y-1">
                     <li>Max 3 pages</li>
                     <li>Static Content</li>
@@ -278,23 +282,22 @@ export const WebDev = () => {
 
           {/* Row 2: Extended Package */}
           <div className="flex flex-col md:flex-row justify-around items-center gap-12">
-            <div className="bg-black text-white p-6 rounded-lg shadow-lg w-full md:w-1/2 ">
-              <h3 className="text-xl font-semibold">Extended Package</h3>
-              <h4>Starts at R5000</h4>
+            <div className="bg-black text-white p-8 rounded-lg shadow-lg w-full md:w-1/2 transition-transform duration-300 transform hover:scale-105">
+              <h3 className="text-2xl font-bold mb-2">Extended Package</h3>
+              <h4 className="text-xl text-[#4480db]">Starts at R5000</h4>
               <p className="mt-2 text-gray-300">
-                Includes advanced features for growing businesses.
+                Perfect for growing businesses looking to scale their online presence.
               </p>
               <ul className="mt-4 list-disc list-inside space-y-2">
-                <li className='text-sm'>User management</li>
-                <li>5 pages max</li>
-                <li>Feature 3</li>
-                <li>Feature 4</li>
-                <li>Feature 5</li>
- 
+                <li>User management system</li>
+                <li>Up to 5 pages</li>
+                <li>Custom features like e-commerce integration</li>
+                <li>Enhanced SEO setup</li>
+                <li>Custom design tailored to your brand</li>
               </ul>
             </div>
 
-            <div className="relative flex justify-center">
+            <div className="relative flex justify-center mt-8 md:mt-0">
               <Image
                 src="/computer-2.svg"
                 alt="Computer Screen"
@@ -311,12 +314,14 @@ export const WebDev = () => {
                 }}
               >
                 <div className="bg-transparent p-4 rounded-md shadow-lg w-full h-full overflow-auto">
-                  <h3 className="text-xl font-semibold">Extended Package</h3>
+                  <h3 className="text-xl font-semibold text-[#4480db]">Extended Package</h3>
+                  {/* Retained Original Text */}
                   <ul className="mt-2 list-disc list-inside text-sm space-y-1">
                     <li>User management</li>
                     <li>5 pages max</li>
                     <li>Feature 3</li>
                     <li>Feature 4</li>
+                    <li>Feature 5</li>
                   </ul>
                 </div>
               </div>
@@ -325,22 +330,22 @@ export const WebDev = () => {
 
           {/* Row 3: Custom Package */}
           <div className="flex flex-col md:flex-row justify-around items-center">
-            <div className="bg-black text-white p-6 rounded-lg shadow-lg w-full md:w-1/2">
-              <h3 className="text-xl font-semibold">Custom Package</h3>
-              <h4>Starts at R8000</h4>
+            <div className="bg-black text-white p-8 rounded-lg shadow-lg w-full md:w-1/2 transition-transform duration-300 transform hover:scale-105">
+              <h3 className="text-2xl font-bold mb-2">Custom Package</h3>
+              <h4 className="text-xl text-[#4480db]">Starts at R8000</h4>
               <p className="mt-2 text-gray-300">
-                Our complete package with all features unlocked.
+                The ultimate package with all advanced features included.
               </p>
               <ul className="mt-4 list-disc list-inside space-y-2 text-sm">
-                <li>5+ pages</li>
-                <li>User management</li>
-                <li>Cloud-based file systems and storage</li>
-                <li>API integration and database</li>
-                <li>Feature 5</li>
+                <li>Unlimited pages</li>
+                <li>Cloud-based storage integration</li>
+                <li>API integration for third-party services</li>
+                <li>Advanced SEO optimization</li>
+                <li>Full e-commerce setup</li>
               </ul>
             </div>
 
-            <div className="relative flex justify-center">
+            <div className="relative flex justify-center mt-8 md:mt-0">
               <Image
                 src="/computer-3.svg"
                 alt="Computer Screen"
@@ -357,7 +362,8 @@ export const WebDev = () => {
                 }}
               >
                 <div className="bg-transparent p-4 rounded-md shadow-lg w-full h-full overflow-auto">
-                  <h6 className="text-xl font-semibold">Custom Package</h6>
+                  <h6 className="text-xl font-semibold text-[#4480db]">Custom Package</h6>
+                  {/* Retained Original Text */}
                   <ul className=" list-disc list-inside space-y-1 text-sm">
                     <li>5+ pages</li>
                     <li>User management</li>
@@ -369,7 +375,9 @@ export const WebDev = () => {
             </div>
 
           </div>
-          <p className="text-white">Instead of charging a hosting fee as others might, we offer you the opportunity to pay for your hosting and associated cloud costs directly as this works out cheaper for you! Please note, to integrate a payment portal into your application for an e-commerce purposes is an additional R2500</p>
+          <p className="tag text-white mt-8 text-center max-w-[60%]">
+            Instead of charging a hosting fee as others might, we offer you the opportunity to pay for your hosting and associated cloud costs directly as this works out cheaper for you! Please note, to integrate a payment portal into your application for an e-commerce purposes is an additional R2500.
+          </p>
 
         </div>
       </div>

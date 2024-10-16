@@ -14,7 +14,7 @@ const DesignLottie = () => {
   }, []);
 
   return (
-    <div style={{ width: 350, height: 350 }}>
+    <div style={{ width: 400, height: 400 }}>
       <Lottie 
         animationData={animationData} 
         loop={true} 
