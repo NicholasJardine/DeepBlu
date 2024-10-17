@@ -86,6 +86,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import LottieCloud from '@/components/cloud';
 import { DesignAndQA } from './Design';
+import DashLottie from '@/components/dashboardani';
+import LottieTesting from '@/components/testing';
 
 export const CloudMigration = () => {
   const heroRef = useRef(null);
@@ -149,7 +151,7 @@ export const CloudMigration = () => {
               </div>
 
               {/* Right Column: Lottie Cloud Animation */}
-              <div className="relative flex justify-center items-center">
+              <div className="relative flex flex-col justify-center items-center">
                 <motion.div style={{ translateY }}>
                   <LottieCloud />
                 </motion.div>
@@ -158,6 +160,8 @@ export const CloudMigration = () => {
           </div>
         </div>
         <DesignAndQA/>
+ 
+
       </div>
     </section>
   );
