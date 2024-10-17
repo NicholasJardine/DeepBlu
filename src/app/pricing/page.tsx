@@ -13,7 +13,7 @@ import { WebDev } from "@/sections/WebDev";
 import { CloudMigration } from "@/sections/CloudMigration";
 import { DesignAndQA } from "@/sections/Design";
 import { DataAnalytics } from "@/sections/DashBoarding";
-
+import { useRef } from "react";
 const pricingTiers = [
   {
     title: "Basic",
@@ -60,9 +60,17 @@ const pricingTiers = [
 
 
 export default function Pricing() {
+    const servicesRef = useRef<HTMLDivElement>(null);  // Create the servicesRef
+
+    const handleScrollToServices = () => {
+      if (servicesRef.current) {
+        servicesRef.current.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+  
   return (
     <> 
-      <Header />
+      <Header onServicesClick={handleScrollToServices}  />
 
         <section className="py-24 bg-white">
     <div className="container">

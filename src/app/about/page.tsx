@@ -33,15 +33,23 @@ import animationData from '@/assets/rocket.json'
 
 
 
-
+import { useRef } from "react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 import MyLottie from "@/components/rocketlottie";
 
 export default function About() {
+  const servicesRef = useRef<HTMLDivElement>(null);  // Create the servicesRef
+
+  const handleScrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <> 
-      <Header />
+      <Header onServicesClick={handleScrollToServices} />
       <div className="container mx-auto px-6 py-8   mt-4">
         <h1 className="text-5xl font-extrabold mb-4 text-blue-900 text-center">
           About Us

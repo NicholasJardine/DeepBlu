@@ -7,8 +7,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { Header } from '@/sections/Header';
 import { Footer } from '@/sections/Footer';
-
+import { useRef } from 'react';
 export default function Contact() {
+
+  const servicesRef = useRef<HTMLDivElement>(null);  // Create the servicesRef
+
+  const handleScrollToServices = () => {
+    if (servicesRef.current) {
+      servicesRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const [result, setResult] = useState<string>("");
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -41,7 +50,7 @@ export default function Contact() {
 
   return (
     <> 
-      <Header />
+      <Header onServicesClick={handleScrollToServices} />
         <section className='py-10 flex flex-col items-center bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_86%)] overflow-x-clip shadow-md'>
           <h1 className='section-title text-7xl mb-4'>Get in Touch</h1>
           <div className="bg-white max-w-[75%] rounded-lg shadow-lg overflow-hidden mb-16">
