@@ -76,6 +76,7 @@ import { Hero } from "@/sections/Hero";
 import { Footer } from "@/sections/Footer";
 import LottieAnimations from "@/components/wavesfull";
 import { useRef } from "react";
+import { WhyUs } from "@/sections/WhyUs";
 
 export default function Home() {
   const servicesRef = useRef<HTMLDivElement>(null);  // Create the servicesRef
@@ -92,6 +93,8 @@ export default function Home() {
       <Header onServicesClick={handleScrollToServices} />
       <LottieAnimations />
       <Hero servicesRef={servicesRef} />  {/* Pass the servicesRef here */}
+      <WhyUs />
+
       <Footer />
     </> 
   );
