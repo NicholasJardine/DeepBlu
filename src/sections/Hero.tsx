@@ -121,7 +121,7 @@ export const Hero: React.FC<HeroProps> = ({ servicesRef }) => {
 
   return (
     <section ref={servicesRef} className='mt-4 pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_86%)] overflow-x-clip'>
-      <div className="container">
+      <div  className="container">
         <div className='md:flex flex-col items-center'>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
             One stop shop
