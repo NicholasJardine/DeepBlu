@@ -143,7 +143,7 @@ import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Header } from "@/sections/Header";
 
-export const DevelopmentProcess: React.FC = () => {
+ const DevelopmentProcess: React.FC = () => {
   const heroRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
@@ -171,8 +171,8 @@ export const DevelopmentProcess: React.FC = () => {
               Our Development Process
             </h1>
             <p className="max-w-[90%] sm:max-w-[70%] mx-auto mt-4 text-gray-600 text-sm sm:text-base pb-8 lg:pb-16">
-              From initial consultation to final deployment, here's how we turn
-              your ideas into a reality.
+              {`From initial consultation to final deployment, here's how we turn
+              your ideas into a reality.`}
             </p>
           </div>
 

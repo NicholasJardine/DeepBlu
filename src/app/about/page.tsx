@@ -171,10 +171,10 @@ export default function About() {
           {/* Text Section */}
           <div className="md:w-[60%] text-left p-4 md:p-8">
             <p className="mb-6 text-lg leading-relaxed text-gray-700">
-              At <strong className="text-blue-800">BluWave</strong>, we believe that custom software should be accessible and affordable for everyone, especially in the South African market. Our dream is to empower businesses of all sizes with innovative, tailor-made software solutions that don't break the bank.
+             At <strong className="text-blue-800">BluWave</strong>{`, we believe that custom software should be accessible and affordable for everyone, especially in the South African market. Our dream is to empower businesses of all sizes with innovative, tailor-made software solutions that don't break the bank.`}
             </p>
             <p className="mb-6 text-lg leading-relaxed text-gray-700">
-              <strong className="text-blue-800">Founded recently</strong>, BluWave is a Johannesburg-based startup with a big vision—to reshape the software development landscape by offering high-quality, customized software at prices that align with the realities of South African businesses. We understand the challenges faced by local companies, and we're committed to creating solutions that meet their unique needs.
+              <strong className="text-blue-800">Founded recently</strong>{`, BluWave is a Johannesburg-based startup with a big vision—to reshape the software development landscape by offering high-quality, customized software at prices that align with the realities of South African businesses. We understand the challenges faced by local companies, and we're committed to creating solutions that meet their unique needs.`}
             </p>
             {/* <p className="mb-6 text-lg leading-relaxed text-gray-700">
               Our small but dynamic team brings together a broad depth of knowledge and experience in building and deploying software solutions across various industries. From web and mobile apps to cloud migrations and data analytics, our experts have been at the forefront of technology, delivering impactful and efficient solutions.

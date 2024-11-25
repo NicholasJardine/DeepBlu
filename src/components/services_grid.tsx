@@ -32,11 +32,11 @@ const ServicesGrid = () => {
   return (
     <section className="py-10 bg-[transparent] grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
       {[
-        { src: "/web_and_mobile.svg", alt: "Web and Mobile Development", text: "Web and Mobile Development" },
+        { src: "/web_and_mobile.svg", alt: "Web and Mobile Development", text: "Web & Mobile Development" },
         { src: "/design.svg", alt: "Wireframes and Design", text: "Wireframes and Design" },
         { src: "/data_analytics.svg", alt: "Data Analytics", text: "Data Analytics" },
         { src: "/cloud_hosting.svg", alt: "Cloud Migration", text: "Cloud Migration" },
-        { src: "/e-commerce.svg", alt: "e-commerce", text: "e-commerce" },
+        { src: "/e-commerce.svg", alt: "e-commerce", text: "e-Commerce" },
         { src: "/testing.svg", alt: "Quality Assurance", text: "Quality Assurance" }
       ].map((service, index) => (
         <div

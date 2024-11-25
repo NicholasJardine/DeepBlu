@@ -476,7 +476,7 @@ export default function Contact() {
                 <Image src={'/envelope.svg'} width={35} height={35} className="ml-2" alt="Message Icon" />
               </h3>
               <p className="max-w-[450px] leading-[1.6] mb-6">
-                You're welcome to contact us using the details below. We're here to assist with any inquiries or support you may need. Feel free to reach out, and we'll respond as soon as possible!
+                {`You're welcome to contact us using the details below. We're here to assist with any inquiries or support you may need. Feel free to reach out, and we'll respond as soon as possible!`}
               </p>
               <ul>
                 <li className="flex items-center my-5">

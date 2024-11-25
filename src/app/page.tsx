@@ -91,7 +91,7 @@ export default function Home() {
     <> 
       {/* Pass handleScrollToServices to the Header and servicesRef to Hero */}
       <Header onServicesClick={handleScrollToServices} />
-      <LottieAnimations />
+      <LottieAnimations onServicesClick={handleScrollToServices} />
       <Hero servicesRef={servicesRef} />  {/* Pass the servicesRef here */}
       <WhyUs />
 

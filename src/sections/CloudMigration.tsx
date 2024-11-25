@@ -123,7 +123,7 @@ export const CloudMigration = () => {
                   <div className="flex gap-4 items-start">
                     <span>⚙️</span>
                     <p className="text-gray-600">
-                      <strong>Complexity-Based Pricing:</strong> The final cost depends on the system's size and complexity.
+                      <strong>Complexity-Based Pricing:</strong> {`The final cost depends on the system's size and complexity.`}
                     </p>
                   </div>
 

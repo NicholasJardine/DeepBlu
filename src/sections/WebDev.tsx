@@ -769,6 +769,92 @@
 
 
 
+// "use client";
+
+// import { twMerge } from "tailwind-merge";
+// import CheckIcon from "@/assets/check.svg";
+
+// const webDevTiers = [
+//   {
+//     title: "Basic Package",
+//     price: 2500,
+//     features: [
+//       "Up to 3 static pages",
+//       "Basic design customization",
+//       "Mobile responsive layout",
+//       "Contact form with email integration",
+//       "Basic SEO setup",
+//     ],
+//   },
+//   {
+//     title: "Extended Package",
+//     price: 5000,
+//     features: [
+//       "User management system",
+//       "Up to 5 pages",
+//       "Custom features like e-commerce integration",
+//       "Enhanced SEO setup",
+//       "Custom design tailored to your brand",
+//     ],
+//   },
+//   {
+//     title: "Custom Package",
+//     price: 8000,
+//     features: [
+//       "Unlimited pages",
+//       "Cloud-based storage integration",
+//       "API integration for third-party services",
+//       "Advanced SEO optimization",
+//       "Full e-commerce setup",
+//     ],
+//   },
+// ];
+
+// export const WebDev = () => {
+//   return (
+//     <section className="py-12 bg-[#0E0E0E] text-white">
+//       <div className="container mx-auto px-4 lg:px-16">
+//         {/* Section Title */}
+//         <div className="text-center mb-8 lg:mb-12">
+//           <h2 className="text-4xl font-extrabold text-white leading-snug sm:text-5xl">
+//             Web Development Packages
+//           </h2>
+//           <p className="mt-4 text-gray-400 text-base sm:text-lg max-w-md mx-auto">
+//             Select the package that fits your needs, from basic websites to advanced custom platforms.
+//           </p>
+//         </div>
+
+//         {/* Cards */}
+//         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 items-center">
+//           {webDevTiers.map(({ title, price, features }) => (
+//             <div
+//               key={title}
+//               className="bg-[#1A1A1A] border border-gray-700 p-8 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105"
+//             >
+//               <h3 className="text-2xl font-bold mb-4 text-white">{title}</h3>
+//               <h4 className="text-3xl font-semibold text-[#4480DB] mb-4">R {price}</h4>
+//               <ul className="mt-6 space-y-4">
+//                 {features.map((feature) => (
+//                   <li
+//                     key={feature}
+//                     className="flex items-start gap-4"
+//                   >
+//                     <div className="flex-shrink-0">
+//                       <CheckIcon className="h-6 w-6 text-[#4480DB]" />
+//                     </div>
+//                     <p className="text-gray-300">{feature}</p>
+//                   </li>
+//                 ))}
+//               </ul>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+
 "use client";
 
 import { twMerge } from "tailwind-merge";
@@ -825,11 +911,12 @@ export const WebDev = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
           {webDevTiers.map(({ title, price, features }) => (
             <div
               key={title}
               className="bg-[#1A1A1A] border border-gray-700 p-8 rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105"
+              style={{ maxWidth: "90%", margin: "0 auto" }} // Adjust width and center for mobile
             >
               <h3 className="text-2xl font-bold mb-4 text-white">{title}</h3>
               <h4 className="text-3xl font-semibold text-[#4480DB] mb-4">R {price}</h4>
