@@ -30,7 +30,7 @@ const ServicesGrid = () => {
     
 
   return (
-    <section className="py-10 bg-[transparent] grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+    <section className="py-0 lg:py-10 bg-[transparent] grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
       {[
         { src: "/web_and_mobile.svg", alt: "Web and Mobile Development", text: "Web & Mobile Development" },
         { src: "/design.svg", alt: "Wireframes and Design", text: "Wireframes and Design" },
