@@ -349,6 +349,11 @@ export const Header: React.FC<HeaderProps> = ({ onServicesClick }) => {
     router.push("/devprocess");
   };
 
+
+  const handlePorfolioClick = () => {
+    router.push("/portfolio");
+  };
+
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
       {/* Top Notification Bar */}
@@ -400,7 +405,7 @@ export const Header: React.FC<HeaderProps> = ({ onServicesClick }) => {
                 Contact
               </Link>
               <a
-                href="#"
+                href="/portfolio"
                 className="hover:text-black hover:border-b-4 hover:border-blue-500 transition-all"
               >
                 Portfolio
